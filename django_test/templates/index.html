@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Word</title>
+</head>
+<body>
+    <h1>Cards here --> <a href="{% url 'cards' %}">Click</a></h1>
+
+    <h2>Create card</h2>
+    <form action="{% url 'card_create' %}" method="post">
+        {% csrf_token %}
+        <table border="1">
+           {{ form }}
+        </table>
+        <input type="submit" value="Сохранить">
+    </form>
+</body>
+</html>

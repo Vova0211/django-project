@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+</head>
+<body>
+    {% if cards %}
+    <ul>
+        {% for card in cards %}
+        <li>
+            <h2>{{ card.title }}</h2>
+            <p>{{ card.body }}</p>
+            <h3>{{ card.price }}</h3>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <h1>There are no cards</h1>
+    {% endif %}
+</body>
+</html>
