@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyd
+*.bin
+
+# Distributions / packaging
+.Python
+env/
+venv/
+lib/
+lib64/
+ve/
+virtualenv/
+# Windows specific
+Scripts/
+# macOS specific
+bin/
+# Generic
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+.env
+.venv
+
+# Unit test / coverage
+.coverage
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+.nox/
+
+# Editors / IDEs
+.idea/  # JetBrains IDEs (PyCharm, etc)
+.vscode/ # VS Code
+*.swp
+*.sublime-workspace
+.metadata/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Type checker cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment variables
+.env
+.flaskenv
